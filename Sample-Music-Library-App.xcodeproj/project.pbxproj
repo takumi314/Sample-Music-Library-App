@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		E14CE3D920444F6A0020F279 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14CE3D820444F6A0020F279 /* AppDelegate.swift */; };
 		E14CE3DB20444F6A0020F279 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14CE3DA20444F6A0020F279 /* ViewController.swift */; };
-		E14CE3DE20444F6A0020F279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E14CE3DC20444F6A0020F279 /* Main.storyboard */; };
 		E14CE3E020444F6A0020F279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E14CE3DF20444F6A0020F279 /* Assets.xcassets */; };
 		E14CE3E320444F6A0020F279 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E14CE3E120444F6A0020F279 /* LaunchScreen.storyboard */; };
 		E14CE3EE20444F6B0020F279 /* Sample_Music_Library_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14CE3ED20444F6B0020F279 /* Sample_Music_Library_AppTests.swift */; };
 		E14CE3F920444F6B0020F279 /* Sample_Music_Library_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14CE3F820444F6B0020F279 /* Sample_Music_Library_AppUITests.swift */; };
+		E14CE40B20445C880020F279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E14CE40A20445C880020F279 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 		E14CE3D520444F6A0020F279 /* Sample-Music-Library-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample-Music-Library-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E14CE3D820444F6A0020F279 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E14CE3DA20444F6A0020F279 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E14CE3DD20444F6A0020F279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E14CE3DF20444F6A0020F279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E14CE3E220444F6A0020F279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E14CE3E420444F6A0020F279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		E14CE3F420444F6B0020F279 /* Sample-Music-Library-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sample-Music-Library-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E14CE3F820444F6B0020F279 /* Sample_Music_Library_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_Music_Library_AppUITests.swift; sourceTree = "<group>"; };
 		E14CE3FA20444F6B0020F279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E14CE40A20445C880020F279 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +103,10 @@
 				E14CE4062044585B0020F279 /* Models */,
 				E14CE3D820444F6A0020F279 /* AppDelegate.swift */,
 				E14CE3DA20444F6A0020F279 /* ViewController.swift */,
-				E14CE3DC20444F6A0020F279 /* Main.storyboard */,
 				E14CE3DF20444F6A0020F279 /* Assets.xcassets */,
 				E14CE3E120444F6A0020F279 /* LaunchScreen.storyboard */,
 				E14CE3E420444F6A0020F279 /* Info.plist */,
+				E14CE40A20445C880020F279 /* Main.storyboard */,
 			);
 			path = "Sample-Music-Library-App";
 			sourceTree = "<group>";
@@ -264,9 +264,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E14CE40B20445C880020F279 /* Main.storyboard in Resources */,
 				E14CE3E320444F6A0020F279 /* LaunchScreen.storyboard in Resources */,
 				E14CE3E020444F6A0020F279 /* Assets.xcassets in Resources */,
-				E14CE3DE20444F6A0020F279 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,14 +328,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E14CE3DC20444F6A0020F279 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E14CE3DD20444F6A0020F279 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E14CE3E120444F6A0020F279 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -461,11 +453,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9D8UR7H9D4;
 				INFOPLIST_FILE = "Sample-Music-Library-App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.takumi314.Sample-Music-Library-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -476,11 +469,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9D8UR7H9D4;
 				INFOPLIST_FILE = "Sample-Music-Library-App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.takumi314.Sample-Music-Library-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
