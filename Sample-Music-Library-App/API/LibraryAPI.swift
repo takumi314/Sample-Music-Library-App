@@ -10,6 +10,7 @@ import Foundation
 
 final class LibraryAPI {
 
+    // Singleton pattern
     static let shared = LibraryAPI()
 
     private init() {
