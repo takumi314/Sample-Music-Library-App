@@ -16,6 +16,8 @@
 		E14CE40B20445C880020F279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E14CE40A20445C880020F279 /* Main.storyboard */; };
 		E14CE40D2044640A0020F279 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14CE40C2044640A0020F279 /* Album.swift */; };
 		E14CE40F204466E20020F279 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14CE40E204466E20020F279 /* AlbumView.swift */; };
+		E14CE411204467720020F279 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14CE410204467720020F279 /* HTTPClient.swift */; };
+		E14CE412204467720020F279 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14CE410204467720020F279 /* HTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,7 @@
 		E14CE40A20445C880020F279 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E14CE40C2044640A0020F279 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		E14CE40E204466E20020F279 /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
+		E14CE410204467720020F279 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +162,7 @@
 		E14CE409204458E40020F279 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				E14CE410204467720020F279 /* HTTPClient.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -298,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E14CE3DB20444F6A0020F279 /* ViewController.swift in Sources */,
+				E14CE411204467720020F279 /* HTTPClient.swift in Sources */,
 				E14CE3D920444F6A0020F279 /* AppDelegate.swift in Sources */,
 				E14CE40F204466E20020F279 /* AlbumView.swift in Sources */,
 				E14CE40D2044640A0020F279 /* Album.swift in Sources */,
@@ -308,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E14CE412204467720020F279 /* HTTPClient.swift in Sources */,
 				E14CE3EE20444F6B0020F279 /* Sample_Music_Library_AppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
