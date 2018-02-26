@@ -6,7 +6,7 @@
 //  Copyright © 2018年 Kohey.Nishioka. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class HTTPClient {
 
