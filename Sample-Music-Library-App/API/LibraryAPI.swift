@@ -12,4 +12,8 @@ final class LibraryAPI {
 
     static let shared = LibraryAPI()
 
+    private init() {
+
+    }
+
 }
