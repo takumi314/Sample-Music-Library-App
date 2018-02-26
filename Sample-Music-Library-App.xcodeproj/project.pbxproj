@@ -97,6 +97,10 @@
 		E14CE3D720444F6A0020F279 /* Sample-Music-Library-App */ = {
 			isa = PBXGroup;
 			children = (
+				E14CE409204458E40020F279 /* API */,
+				E14CE408204458A20020F279 /* Controllers */,
+				E14CE407204458980020F279 /* Views] */,
+				E14CE4062044585B0020F279 /* Models */,
 				E14CE3D820444F6A0020F279 /* AppDelegate.swift */,
 				E14CE3DA20444F6A0020F279 /* ViewController.swift */,
 				E14CE3DC20444F6A0020F279 /* Main.storyboard */,
@@ -123,6 +127,34 @@
 				E14CE3FA20444F6B0020F279 /* Info.plist */,
 			);
 			path = "Sample-Music-Library-AppUITests";
+			sourceTree = "<group>";
+		};
+		E14CE4062044585B0020F279 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E14CE407204458980020F279 /* Views] */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Views]";
+			sourceTree = "<group>";
+		};
+		E14CE408204458A20020F279 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E14CE409204458E40020F279 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
