@@ -101,7 +101,7 @@
 			children = (
 				E14CE409204458E40020F279 /* API */,
 				E14CE408204458A20020F279 /* Controllers */,
-				E14CE407204458980020F279 /* Views] */,
+				E14CE407204458980020F279 /* Views */,
 				E14CE4062044585B0020F279 /* Models */,
 				E14CE3D820444F6A0020F279 /* AppDelegate.swift */,
 				E14CE3DA20444F6A0020F279 /* ViewController.swift */,
@@ -139,11 +139,11 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		E14CE407204458980020F279 /* Views] */ = {
+		E14CE407204458980020F279 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "Views]";
+			path = Views;
 			sourceTree = "<group>";
 		};
 		E14CE408204458A20020F279 /* Controllers */ = {
