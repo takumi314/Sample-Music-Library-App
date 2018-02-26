@@ -13,6 +13,10 @@ final class LibraryAPI {
     // Singleton pattern
     static let shared = LibraryAPI()
 
+    private let persistenceManager = PersistencyManager()
+    private let httpClient = HTTPClient()
+    private var isOnline = false
+
     private init() {
 
     }
