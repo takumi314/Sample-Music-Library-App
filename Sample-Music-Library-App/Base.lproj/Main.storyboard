@@ -106,6 +106,9 @@
                         <viewLayoutGuide key="safeArea" id="3P8-2D-pMH"/>
                     </view>
                     <navigationItem key="navigationItem" title="Pop Music" id="XF3-Py-p3M"/>
+                    <connections>
+                        <outlet property="tableView" destination="1po-Kw-ye9" id="xX5-D6-JHa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nu5-mL-GqJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
