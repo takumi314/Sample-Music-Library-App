@@ -8,6 +8,8 @@
 
 import Foundation
 
+typealias AlbumData = (title: String, valeu: String)
+
 struct Album {
     let title : String
     let artist : String
@@ -25,3 +27,17 @@ extension Album: CustomStringConvertible {
         " year: \(year)"
     }
 }
+
+extension Album {
+    var tableRepresentation: [AlbumData] {
+        return [
+            ("Title", title),
+            ("Album", artist),
+            ("Genre", genre),
+            ("Year", year)
+        ]
+    }
+
+}
+
+
