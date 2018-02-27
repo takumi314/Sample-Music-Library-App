@@ -8,6 +8,10 @@
 
 import UIKit
 
+enum Constant {
+    static let CellIdentifier = "Cell"
+}
+
 final class ViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
@@ -69,7 +73,7 @@ extension ViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constant.CellIdentifier, for: indexPath)
         if let albumData = currentAlbumData {
             let row = indexPath.row
             cell.textLabel?.text = albumData[row].title
