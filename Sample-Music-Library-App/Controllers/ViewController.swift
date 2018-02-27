@@ -27,8 +27,17 @@ final class ViewController: UIViewController {
 
 }
 
+/*:
+
+ Delegation, is a mechanism in which one object acts on behalf of,
+ or in coordination with, another object.
+
+ */
+
 extension ViewController: UITableViewDataSource {
 
+    /// the number of rows to display in the table view,
+    /// which matches the number of items in the “decorated” representation of the album.
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let albums = currentAlbumData else {
             return 0
