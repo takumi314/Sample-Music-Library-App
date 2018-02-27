@@ -25,6 +25,7 @@ final class ViewController: UIViewController {
 
         allAlbums = LibraryAPI.shared.getAlbum()
 
+        tableView.dataSource = self
     }
 
 }
