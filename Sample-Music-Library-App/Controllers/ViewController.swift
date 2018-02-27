@@ -28,6 +28,22 @@ final class ViewController: UIViewController {
         tableView.dataSource = self
     }
 
+    // MARK: - Private method
+
+    func showDataForAlbum(at index: Int) {
+        // defensive code: make sure the requested index is lower than the amount of albums
+        if -1 < index && index < allAlbums.count {
+            // fetch the album
+            let album = allAlbums[index]
+            // save the albums data to present it later in the tableview
+            currentAlbumData = album.tableRepresentation
+        } else {
+            currentAlbumData = nil
+        }
+        // we have the data we need, let's refresh our tableview
+        tableView.reloadData()
+    }
+
 }
 
 /*:
