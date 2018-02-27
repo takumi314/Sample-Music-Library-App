@@ -20,12 +20,16 @@ final class ViewController: UIViewController {
     var currentAlbumData: [AlbumData]?
     var allAlbums = [Album]()
 
+    // MARK: - Life cycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         allAlbums = LibraryAPI.shared.getAlbum()
 
         tableView.dataSource = self
+
+        showDataForAlbum(at: currentAlbumIndex)
     }
 
     // MARK: - Private method
