@@ -38,7 +38,7 @@
                                 <rect key="frame" x="0.0" y="184" width="375" height="439"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Q5z-CQ-5ax" detailTextLabel="W1B-dQ-d4p" style="IBUITableViewCellStyleValue1" id="xnf-od-3nI">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="Q5z-CQ-5ax" detailTextLabel="W1B-dQ-d4p" style="IBUITableViewCellStyleValue1" id="xnf-od-3nI">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xnf-od-3nI" id="f02-dJ-VpV">
@@ -106,10 +106,13 @@
                         <viewLayoutGuide key="safeArea" id="3P8-2D-pMH"/>
                     </view>
                     <navigationItem key="navigationItem" title="Pop Music" id="XF3-Py-p3M"/>
+                    <connections>
+                        <outlet property="tableView" destination="1po-Kw-ye9" id="xX5-D6-JHa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nu5-mL-GqJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="210" y="68"/>
+            <point key="canvasLocation" x="457" y="68"/>
         </scene>
     </scenes>
 </document>

@@ -8,6 +8,12 @@
 
 import Foundation
 
+///
+/// This typealias defines a tuple which contains all of the information
+/// that the table view needs to display a row of data.
+///
+typealias AlbumData = (title: String, valeu: String)
+
 struct Album {
     let title : String
     let artist : String
@@ -25,3 +31,17 @@ extension Album: CustomStringConvertible {
         " year: \(year)"
     }
 }
+
+extension Album {
+    var tableRepresentation: [AlbumData] {
+        return [
+            ("Title", title),
+            ("Album", artist),
+            ("Genre", genre),
+            ("Year", year)
+        ]
+    }
+
+}
+
+
