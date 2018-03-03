@@ -112,6 +112,7 @@
 		E14CE3D720444F6A0020F279 /* Sample-Music-Library-App */ = {
 			isa = PBXGroup;
 			children = (
+				E14CE41B204AFA4C0020F279 /* Extensions */,
 				E14CE409204458E40020F279 /* API */,
 				E14CE408204458A20020F279 /* Controllers */,
 				E14CE407204458980020F279 /* Views */,
@@ -176,6 +177,13 @@
 				E14CE41620446B8F0020F279 /* PersistencyManager.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		E14CE41B204AFA4C0020F279 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
