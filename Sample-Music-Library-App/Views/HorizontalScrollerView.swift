@@ -65,6 +65,7 @@ class HorizontalScrollerView: UIView {
 
         let tapGesture  = UITapGestureRecognizer(target: self, action: #selector(scrollerTapped))
         scroller.addGestureRecognizer(tapGesture)
+        scroller.delegate = self
     }
 
     /// Finds the location of the tap in the scroll view,
@@ -125,6 +126,34 @@ class HorizontalScrollerView: UIView {
         /// set the content offset for the scroll view to allow the user to scroll
         /// through all the albums covers.
         scroller.contentSize = CGSize(width: xValue + ViewControllers.Offset, height: frame.size.height)
+    }
+
+    func centerCurrentView() {
+        let currentRect = CGRect(origin: CGPoint(x: scroller.bounds.midX, y: 0),
+                                 size: CGSize(width: ViewControllers.Padding, height: bounds.height))
+        guard let selectedIndex = contentViews.index(where: { $0.frame.intersects(currentRect) })
+            else { return }
+        let centralView = contentViews[selectedIndex]
+        let targetCenter = centralView.center
+        let targetOffsetX = targetCenter.x - ( scroller.bounds.width / 2 )
+
+        scroller.setContentOffset(CGPoint(x: targetOffsetX, y: 0), animated: true)
+        delegate?.horizontalScrollerView(self, didSelectViewAt: selectedIndex)
+    }
+
+}
+
+extension HorizontalScrollerView: UIScrollViewDelegate {
+    /// Informs the delegate when the user finishes dragging.
+    /// The decelerate parameter is true if the scroll view hasn't come to a complete stop yet.
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if !decelerate {
+            centerCurrentView()
+        }
+    }
+
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        centerCurrentView()
     }
 
 }
