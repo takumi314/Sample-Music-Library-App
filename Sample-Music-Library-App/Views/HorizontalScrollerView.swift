@@ -44,9 +44,11 @@ class HorizontalScrollerView: UIView {
     /// MARK: - Initializer
     override init(frame: CGRect) {
         super.init(frame: frame)
+        initializeScrollView()
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        initializeScrollView()
     }
 
     func initializeScrollView() {
