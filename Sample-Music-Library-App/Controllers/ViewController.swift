@@ -17,6 +17,7 @@ final class ViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     @IBOutlet var undoBarButtonItem: UIBarButtonItem!
     @IBOutlet var trashBarButtonItem: UIBarButtonItem!
+    @IBOutlet weak var horizontalScrollView: HorizontalScrollerView!
 
     // MARK: - Private properties
 
@@ -32,6 +33,9 @@ final class ViewController: UIViewController {
         allAlbums = LibraryAPI.shared.getAlbum()
 
         tableView.dataSource = self
+        horizontalScrollView.delegate = self
+        horizontalScrollView.dataSource = self
+        horizontalScrollView.reload()
 
         showDataForAlbum(at: currentAlbumIndex)
     }
@@ -81,5 +85,37 @@ extension ViewController: UITableViewDataSource {
         }
         return cell
     }
+}
 
+// MARK: - HorizontalScrollerViewDataSource
+extension ViewController: HorizontalScrollerViewDataSource {
+    func numberOfViews(in horizontalScrollerView: HorizontalScrollerView) -> Int {
+        return allAlbums.count
+    }
+    func horizontalScrollerView(_ horizontalScrollerView: HorizontalScrollerView, viewAt index: Int) -> UIView {
+        let album = allAlbums[index]
+        let albumView = AlbumView(frame: CGRect(x: 0, y: 0, width: 100.0, height: 100.0), coverUrl: album.coverUrl)
+        if currentAlbumIndex == index {
+            albumView.highlightAlbum(true)
+        } else {
+            albumView.highlightAlbum(false)
+        }
+        return albumView
+    }
+}
+
+// MARK: - HorizontalScrollerViewDelegate
+extension ViewController: HorizontalScrollerViewDelegate {
+    func horizontalScrollerView(_ horizontalScrollerView: HorizontalScrollerView, didSelectViewAt index: Int) {
+        /// grab the previously selected album, and deselect the album cover.
+        let previousAlbumView = horizontalScrollView.view(at: currentAlbumIndex) as! AlbumView
+        previousAlbumView.highlightAlbum(false)
+        /// Store the current album cover index which is just clicked
+        currentAlbumIndex = index
+        /// Grab the album cover that is currently selected and highlight the selection
+        let albumView = horizontalScrollView.view(at: currentAlbumIndex) as! AlbumView
+        albumView.highlightAlbum(true)
+        /// Display the data for the new album within the table view
+        showDataForAlbum(at: currentAlbumIndex)
+    }
 }

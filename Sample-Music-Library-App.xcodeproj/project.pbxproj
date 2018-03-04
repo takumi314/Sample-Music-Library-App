@@ -22,6 +22,7 @@
 		E14CE41520446AAB0020F279 /* LibraryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14CE41320446AAB0020F279 /* LibraryAPI.swift */; };
 		E14CE41720446B8F0020F279 /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14CE41620446B8F0020F279 /* PersistencyManager.swift */; };
 		E14CE41820446B8F0020F279 /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14CE41620446B8F0020F279 /* PersistencyManager.swift */; };
+		E14CE41A204780210020F279 /* HorizontalScrollerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14CE419204780210020F279 /* HorizontalScrollerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		E14CE410204467720020F279 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		E14CE41320446AAB0020F279 /* LibraryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryAPI.swift; sourceTree = "<group>"; };
 		E14CE41620446B8F0020F279 /* PersistencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistencyManager.swift; sourceTree = "<group>"; };
+		E14CE419204780210020F279 /* HorizontalScrollerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		E14CE3D720444F6A0020F279 /* Sample-Music-Library-App */ = {
 			isa = PBXGroup;
 			children = (
+				E14CE41B204AFA4C0020F279 /* Extensions */,
 				E14CE409204458E40020F279 /* API */,
 				E14CE408204458A20020F279 /* Controllers */,
 				E14CE407204458980020F279 /* Views */,
@@ -153,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				E14CE40E204466E20020F279 /* AlbumView.swift */,
+				E14CE419204780210020F279 /* HorizontalScrollerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,6 +177,13 @@
 				E14CE41620446B8F0020F279 /* PersistencyManager.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		E14CE41B204AFA4C0020F279 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +322,7 @@
 			files = (
 				E14CE3DB20444F6A0020F279 /* ViewController.swift in Sources */,
 				E14CE411204467720020F279 /* HTTPClient.swift in Sources */,
+				E14CE41A204780210020F279 /* HorizontalScrollerView.swift in Sources */,
 				E14CE41420446AAB0020F279 /* LibraryAPI.swift in Sources */,
 				E14CE3D920444F6A0020F279 /* AppDelegate.swift in Sources */,
 				E14CE40F204466E20020F279 /* AlbumView.swift in Sources */,
