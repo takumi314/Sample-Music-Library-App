@@ -17,6 +17,7 @@ final class ViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     @IBOutlet var undoBarButtonItem: UIBarButtonItem!
     @IBOutlet var trashBarButtonItem: UIBarButtonItem!
+    @IBOutlet weak var horizontalScrollView: HorizontalScrollerView!
 
     // MARK: - Private properties
 
