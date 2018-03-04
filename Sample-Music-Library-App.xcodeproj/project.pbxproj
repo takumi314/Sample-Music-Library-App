@@ -23,6 +23,7 @@
 		E14CE41720446B8F0020F279 /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14CE41620446B8F0020F279 /* PersistencyManager.swift */; };
 		E14CE41820446B8F0020F279 /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14CE41620446B8F0020F279 /* PersistencyManager.swift */; };
 		E14CE41A204780210020F279 /* HorizontalScrollerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14CE419204780210020F279 /* HorizontalScrollerView.swift */; };
+		E14CE41D204C684F0020F279 /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14CE41C204C684F0020F279 /* NotificationExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		E14CE41320446AAB0020F279 /* LibraryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryAPI.swift; sourceTree = "<group>"; };
 		E14CE41620446B8F0020F279 /* PersistencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistencyManager.swift; sourceTree = "<group>"; };
 		E14CE419204780210020F279 /* HorizontalScrollerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollerView.swift; sourceTree = "<group>"; };
+		E14CE41C204C684F0020F279 /* NotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 		E14CE41B204AFA4C0020F279 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E14CE41C204C684F0020F279 /* NotificationExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				E14CE3DB20444F6A0020F279 /* ViewController.swift in Sources */,
 				E14CE411204467720020F279 /* HTTPClient.swift in Sources */,
 				E14CE41A204780210020F279 /* HorizontalScrollerView.swift in Sources */,
+				E14CE41D204C684F0020F279 /* NotificationExtension.swift in Sources */,
 				E14CE41420446AAB0020F279 /* LibraryAPI.swift in Sources */,
 				E14CE3D920444F6A0020F279 /* AppDelegate.swift in Sources */,
 				E14CE40F204466E20020F279 /* AlbumView.swift in Sources */,
