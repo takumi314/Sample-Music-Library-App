@@ -12,6 +12,7 @@ class AlbumView: UIView {
 
     private var coverImageView: UIImageView!
     private var indicatorView: UIActivityIndicatorView!
+    private var valueObservation: NSKeyValueObservation!
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -52,6 +53,14 @@ class AlbumView: UIView {
             indicatorView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             indicatorView.centerYAnchor.constraint(equalTo: self.centerYAnchor)
             ])
+
+        // use KVO to observe changes to the image property of the UIImageView that holds the image
+        valueObservation = coverImageView.observe(\.image, options: [.new]) {
+            [unowned self](observed, change) in
+            if change.newValue is UIImage {
+                self.indicatorView.stopAnimating()
+            }
+        }
     }
 
     func highlightAlbum(_ didHighlightView: Bool) {
