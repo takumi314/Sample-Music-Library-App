@@ -7,10 +7,16 @@
 //
 
 import Foundation
+import UIKit
 
 final class PersistencyManager {
 
     private var albums = [Album]()
+    private var cache: URL {
+        get {
+            return FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!
+        }
+    }
 
     init() {
         //Dummy list of albums
@@ -61,6 +67,20 @@ final class PersistencyManager {
 
     func deleteAlbum(at index: Int) {
         albums.remove(at: index)
+    }
+
+    func saveImage(_ image: UIImage, fileName: String) {
+        let url = cache.appendingPathComponent(fileName)
+        guard let data = UIImagePNGRepresentation(image)
+            else { return }
+        try? data.write(to: url)
+    }
+
+    func getImage(with fileName: String) -> UIImage? {
+        let url = cache.appendingPathComponent(fileName)
+        guard let data = try? Data(contentsOf: url)
+            else { return nil }
+        return UIImage(data: data)
     }
 
 }

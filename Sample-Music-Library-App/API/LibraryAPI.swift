@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 /*:
  The Facade design pattern provides a single interface to a complex subsystem.
@@ -34,6 +35,26 @@ final class LibraryAPI {
     private var isOnline = false
 
     private init() {
+        NotificationCenter.default.addObserver(forName: .DownloadImage, object: nil, queue: nil) {
+            [weak self]notification in
+            guard
+                let userInfo = notification.userInfo,
+                let imageView = userInfo["imageView"] as? UIImageView ,
+                let coverUrl = userInfo["coverUrl"] as? String,
+                let filename = URL(string: coverUrl)?.lastPathComponent
+                else { return }
+            if let savedImage = self?.persistenceManager.getImage(with: filename) {
+                imageView.image = savedImage
+                return
+            }
+            DispatchQueue.global().async {
+                let downloadedImage = self?.httpClient.downloadImage(coverUrl) ?? UIImage()
+                DispatchQueue.main.async {
+                    imageView.image = downloadedImage
+                    self?.persistenceManager.saveImage(downloadedImage, fileName: filename)
+                }
+            }
+        }
 
     }
 
