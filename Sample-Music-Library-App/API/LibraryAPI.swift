@@ -35,7 +35,7 @@ final class LibraryAPI {
     private var isOnline = false
 
     private init() {
-        NotificationCenter.default.addObserver(forName: .DownloadImage, object: self, queue: nil) {
+        NotificationCenter.default.addObserver(forName: .DownloadImage, object: nil, queue: nil) {
             [weak self]notification in
             guard
                 let userInfo = notification.userInfo,
