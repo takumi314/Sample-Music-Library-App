@@ -10,6 +10,7 @@ import UIKit
 
 enum Constant {
     static let CellIdentifier = "Cell"
+    static let IndexRestorationKey = "currentAlbumIndex"
 }
 
 final class ViewController: UIViewController {
@@ -38,6 +39,22 @@ final class ViewController: UIViewController {
         horizontalScrollView.reload()
 
         showDataForAlbum(at: currentAlbumIndex)
+    }
+
+    // MARK: - Override
+
+    /// will happen when your app enters the background
+    override func encodeRestorableState(with coder: NSCoder) {
+        coder.encode(currentAlbumIndex, forKey: Constant.IndexRestorationKey)
+        super.encodeRestorableState(with: coder)
+    }
+
+    /// will happen when the app is launched, after the view of your view controller is loaded
+    override func decodeRestorableState(with coder: NSCoder) {
+        super.decodeRestorableState(with: coder)
+        currentAlbumIndex = coder.decodeInteger(forKey: Constant.IndexRestorationKey)
+        showDataForAlbum(at: currentAlbumIndex)
+        horizontalScrollView.reload()
     }
 
     // MARK: - Private method
