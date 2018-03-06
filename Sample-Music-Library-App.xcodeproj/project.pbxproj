@@ -24,6 +24,7 @@
 		E14CE41820446B8F0020F279 /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14CE41620446B8F0020F279 /* PersistencyManager.swift */; };
 		E14CE41A204780210020F279 /* HorizontalScrollerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14CE419204780210020F279 /* HorizontalScrollerView.swift */; };
 		E14CE41D204C684F0020F279 /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14CE41C204C684F0020F279 /* NotificationExtension.swift */; };
+		E1A4E023204EF8B9006C0334 /* albums.json in Resources */ = {isa = PBXBuildFile; fileRef = E1A4E022204EF8B8006C0334 /* albums.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		E14CE41620446B8F0020F279 /* PersistencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistencyManager.swift; sourceTree = "<group>"; };
 		E14CE419204780210020F279 /* HorizontalScrollerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollerView.swift; sourceTree = "<group>"; };
 		E14CE41C204C684F0020F279 /* NotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExtension.swift; sourceTree = "<group>"; };
+		E1A4E022204EF8B8006C0334 /* albums.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = albums.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		E14CE3D720444F6A0020F279 /* Sample-Music-Library-App */ = {
 			isa = PBXGroup;
 			children = (
+				E1A4E022204EF8B8006C0334 /* albums.json */,
 				E14CE41B204AFA4C0020F279 /* Extensions */,
 				E14CE409204458E40020F279 /* API */,
 				E14CE408204458A20020F279 /* Controllers */,
@@ -299,6 +302,7 @@
 				E14CE40B20445C880020F279 /* Main.storyboard in Resources */,
 				E14CE3E320444F6A0020F279 /* LaunchScreen.storyboard in Resources */,
 				E14CE3E020444F6A0020F279 /* Assets.xcassets in Resources */,
+				E1A4E023204EF8B9006C0334 /* albums.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
