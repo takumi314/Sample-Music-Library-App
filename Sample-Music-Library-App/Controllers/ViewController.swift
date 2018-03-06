@@ -41,6 +41,11 @@ final class ViewController: UIViewController {
         showDataForAlbum(at: currentAlbumIndex)
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        horizontalScrollView.scrollToView(at: currentAlbumIndex, animated: false)
+    }
+
     // MARK: - Override
 
     /// will happen when your app enters the background

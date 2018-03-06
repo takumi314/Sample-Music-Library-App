@@ -83,7 +83,7 @@ class HorizontalScrollerView: UIView {
     }
 
     /// Retrieves the view for a specific index and centers it.
-    private func scrollToView(at index: Int, animated: Bool = true) {
+    func scrollToView(at index: Int, animated: Bool = true) {
         let contentView = contentViews[index]
         let targetCenter = contentView.center
         let targetOffsetX = targetCenter.x - scroller.bounds.width / 2
