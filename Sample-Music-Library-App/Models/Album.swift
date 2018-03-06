@@ -14,7 +14,7 @@ import Foundation
 ///
 typealias AlbumData = (title: String, valeu: String)
 
-struct Album {
+struct Album: Codable {
     let title : String
     let artist : String
     let genre : String
